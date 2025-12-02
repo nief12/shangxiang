@@ -630,7 +630,7 @@ class AutoTask:
                     # 登录成功后执行签到任务
                     self.do_task(host, session)
 
-                logging.info(f"------【账号{index}】执行任务完成------")
+                logging.info(f"------【账号】执行任务完成------")
                 logging.info("")
         except Exception as e:
             logging.error(f"【{self.site_name}】执行过程中发生错误: {str(e)}\n{traceback.format_exc()}")
